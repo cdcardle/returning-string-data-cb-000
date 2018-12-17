@@ -1762,3 +1762,14 @@ Processing by PostsController#body as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
   Rendered text template (0.0ms)
 Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts" for 68.42.76.249 at 2018-12-17 18:32:08 +0000
+Cannot render console from 68.42.76.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.6ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
